@@ -4,12 +4,12 @@ import {
   MatchStyle,
 } from "@aws-cdk/assert";
 import * as cdk from "@aws-cdk/core";
-import { WinnerStack } from "../lib/winner-stack";
+import { WinnersStack } from "./winners-stack";
 
 test("Empty Stack", () => {
   const app = new cdk.App();
   // WHEN
-  const stack = new WinnerStack(app, "MyTestStack");
+  const stack = new WinnersStack(app, "MyTestStack");
   // THEN
   expectCDK(stack).to(
     matchTemplate(

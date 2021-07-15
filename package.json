@@ -2,12 +2,13 @@
   "name": "aws-developer-challenge-1",
   "version": "0.1.0",
   "bin": {
-    "winner-app": "bin/winner-app.js"
+    "winners-app": "aws/winners-app.js"
   },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
+    "deploy": "cdk deploy",
     "cdk": "cdk"
   },
   "devDependencies": {
