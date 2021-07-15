@@ -124,6 +124,21 @@
     constructs "^3.3.69"
     punycode "^2.1.1"
 
+"@aws-cdk/aws-dynamodb@^1.113.0":
+  version "1.113.0"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.113.0.tgz#f0456b4f3b9dcba157611625d21a79b2ff99332a"
+  integrity sha1-8EVrTzudy6FXYRYl0hp5sv+ZMyo=
+  dependencies:
+    "@aws-cdk/aws-applicationautoscaling" "1.113.0"
+    "@aws-cdk/aws-cloudwatch" "1.113.0"
+    "@aws-cdk/aws-iam" "1.113.0"
+    "@aws-cdk/aws-kinesis" "1.113.0"
+    "@aws-cdk/aws-kms" "1.113.0"
+    "@aws-cdk/aws-lambda" "1.113.0"
+    "@aws-cdk/core" "1.113.0"
+    "@aws-cdk/custom-resources" "1.113.0"
+    constructs "^3.3.69"
+
 "@aws-cdk/aws-ec2@1.113.0":
   version "1.113.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/@aws-cdk/aws-ec2/-/aws-ec2-1.113.0.tgz#419a01934bf5a411689f70ea4b61f8a9a3cddc46"
@@ -211,6 +226,18 @@
   dependencies:
     "@aws-cdk/core" "1.113.0"
     "@aws-cdk/region-info" "1.113.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-kinesis@1.113.0":
+  version "1.113.0"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@aws-cdk/aws-kinesis/-/aws-kinesis-1.113.0.tgz#4877e613eb75a2303599a99b06b55381a062b785"
+  integrity sha1-SHfmE+t1ojA1mambBrVTgaBit4U=
+  dependencies:
+    "@aws-cdk/aws-cloudwatch" "1.113.0"
+    "@aws-cdk/aws-iam" "1.113.0"
+    "@aws-cdk/aws-kms" "1.113.0"
+    "@aws-cdk/aws-logs" "1.113.0"
+    "@aws-cdk/core" "1.113.0"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-kms@1.113.0":
@@ -1245,7 +1272,7 @@ aws-cdk@1.113.0:
     yaml "1.10.2"
     yargs "^16.2.0"
 
-aws-sdk@^2.848.0:
+aws-sdk@^2.848.0, aws-sdk@^2.946.0:
   version "2.946.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/aws-sdk/-/aws-sdk-2.946.0.tgz#74d8748c6fd4ae6edb35e6fa04c0023c34674d47"
   integrity sha1-dNh0jG/Urm7bNeb6BMACPDRnTUc=
