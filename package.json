@@ -2,7 +2,7 @@
   "name": "aws-developer-challenge-1",
   "version": "0.1.0",
   "bin": {
-    "aws-developer-challenge-1": "bin/aws-developer-challenge-1.js"
+    "winner-app": "bin/winner-app.js"
   },
   "scripts": {
     "build": "tsc",
@@ -21,6 +21,8 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.113.0",
+    "@aws-cdk/aws-lambda": "^1.113.0",
     "@aws-cdk/core": "1.113.0",
     "source-map-support": "^0.5.16"
   }
