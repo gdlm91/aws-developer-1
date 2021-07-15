@@ -6,4 +6,5 @@ export interface RawChallenge {
 
 export interface Challenge extends Omit<RawChallenge, "students"> {
   students: string[];
+  winnersList?: string[];
 }

@@ -10,10 +10,9 @@ export class WinnersStack extends Core.Stack {
     super(scope, id, props);
 
     // DynamoDB
-    const dynamoTablePrimaryKey = "challengeID";
     const dynamoTable = new DynamoDB.Table(this, "items", {
       partitionKey: {
-        name: dynamoTablePrimaryKey,
+        name: "challengeID",
         type: DynamoDB.AttributeType.NUMBER,
       },
       tableName: "winners",
@@ -32,7 +31,6 @@ export class WinnersStack extends Core.Stack {
       runtime: Lambda.Runtime.NODEJS_14_X,
       code: Lambda.Code.fromAsset("dist/handlers"),
       environment: {
-        PRIMARY_KEY: dynamoTablePrimaryKey,
         TABLE_NAME: dynamoTable.tableName,
       },
     };
